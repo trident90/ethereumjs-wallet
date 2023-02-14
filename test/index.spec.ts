@@ -18,7 +18,7 @@ const fixturePrivateKeyBuffer = Buffer.from(fixturePrivateKey, 'hex')
 
 const fixturePublicKey =
   '5d4392f450262b276652c1fc037606abac500f3160830ce9df53aa70d95ce7cfb8b06010b2f3691c78c65c21eb4cf3dfdbfc0745d89b664ee10435bb3a0f906c'
-const fixturePublicKeyStr = '0x' + fixturePublicKey
+const fixturePublicKeyStr = '0x04' + fixturePublicKey
 const fixturePublicKeyBuffer = Buffer.from(fixturePublicKey, 'hex')
 
 const fixtureWallet = Wallet.fromPrivateKey(fixturePrivateKeyBuffer)

@@ -1,6 +1,6 @@
 {
-  "name": "ethereumjs-wallet",
-  "version": "1.0.2",
+  "name": "@trident90/ethereumjs-wallet",
+  "version": "1.0.3",
   "description": "Utilities for handling Ethereum keys",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,12 +36,12 @@
     "wallets",
     "keys"
   ],
-  "author": "Alex Beregszaszi <alex@rtfs.hu>",
+  "author": "Jeff Jung <trident@naver.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ethereumjs/ethereumjs-wallet/issues"
+    "url": "https://github.com/trident90/ethereumjs-wallet/issues"
   },
-  "homepage": "https://github.com/ethereumjs/ethereumjs-wallet",
+  "homepage": "https://github.com/trident90/ethereumjs-wallet",
   "dependencies": {
     "aes-js": "^3.1.2",
     "bs58check": "^2.1.2",

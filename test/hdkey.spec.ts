@@ -97,7 +97,7 @@ describe('.getWallet()', function () {
     )
     assert.strictEqual(
       fixturehd.getWallet().getPublicKeyString(),
-      '0x0639797f6cc72aea0f3d309730844a9e67d9f1866e55845c5f7e0ab48402973defa5cb69df462bcc6d73c31e1c663c225650e80ef14a507b203f2a12aea55bc1'
+      '0x040639797f6cc72aea0f3d309730844a9e67d9f1866e55845c5f7e0ab48402973defa5cb69df462bcc6d73c31e1c663c225650e80ef14a507b203f2a12aea55bc1'
     )
   })
   it('should work with public nodes', function () {
@@ -109,7 +109,7 @@ describe('.getWallet()', function () {
     }, /^Error: This is a public key only wallet$/)
     assert.strictEqual(
       hdnode.getWallet().getPublicKeyString(),
-      '0x0639797f6cc72aea0f3d309730844a9e67d9f1866e55845c5f7e0ab48402973defa5cb69df462bcc6d73c31e1c663c225650e80ef14a507b203f2a12aea55bc1'
+      '0x040639797f6cc72aea0f3d309730844a9e67d9f1866e55845c5f7e0ab48402973defa5cb69df462bcc6d73c31e1c663c225650e80ef14a507b203f2a12aea55bc1'
     )
   })
 })

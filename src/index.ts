@@ -10,6 +10,7 @@ import {
   importPublic,
   isValidPrivate,
   isValidPublic,
+  toBuffer,
 } from 'ethereumjs-util'
 import { scrypt } from 'scrypt-js'
 
@@ -125,6 +126,11 @@ function mergeToV3ParamsWithDefaults(params?: Partial<V3Params>): V3ParamsStrict
     ...v3Defaults,
     ...(params as V3ParamsStrict),
   }
+}
+
+function bufferToHexForPublicKey(buf: Buffer): string {
+  buf = toBuffer(buf)
+  return '0x04' + buf.toString('hex')
 }
 
 // KDF
@@ -522,7 +528,7 @@ export default class Wallet {
    * Returns the wallet's public key as a "0x" prefixed hex string
    */
   public getPublicKeyString(): string {
-    return bufferToHex(this.getPublicKey())
+    return bufferToHexForPublicKey(this.getPublicKey())
   }
 
   /**
